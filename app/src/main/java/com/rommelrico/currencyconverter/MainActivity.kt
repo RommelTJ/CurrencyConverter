@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         val formattedAmount = format.format(amountInDlls.toDouble())
         val formattedConverted = format.format(convertedAmount)
 
-        Toast.makeText(this, "$$amountInDlls U.S. is $formattedConverted in MXN", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "$formattedAmount U.S. is $formattedConverted MXN", Toast.LENGTH_SHORT).show()
 
     }
 
