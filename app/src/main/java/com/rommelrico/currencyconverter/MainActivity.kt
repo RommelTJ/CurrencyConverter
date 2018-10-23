@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.EditText
+import android.widget.Toast
 import java.text.NumberFormat
 import java.util.*
 
@@ -18,8 +19,11 @@ class MainActivity : AppCompatActivity() {
         val convertedAmount = amountInDlls.toDouble() * conversionAmount
 
         val format = NumberFormat.getCurrencyInstance(Locale.US)
-        val formattedAmnt = format.format(convertedAmount)
-        
+        val formattedAmount = format.format(amountInDlls.toDouble())
+        val formattedConverted = format.format(convertedAmount)
+
+        Toast.makeText(this, "$$amountInDlls U.S. is $formattedConverted in MXN", Toast.LENGTH_SHORT).show()
+
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
