@@ -10,7 +10,9 @@ class MainActivity : AppCompatActivity() {
 
     fun convertCurrency(view: View) {
         val editText = findViewById<EditText>(R.id.currencyText)
-        Log.i("Info", "${editText.text.toString()}")
+        val amountInDlls: String = editText.text.toString()
+        val conversionAmount = 18
+        val convertedAmount = amountInDlls.toDouble() * conversionAmount
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
