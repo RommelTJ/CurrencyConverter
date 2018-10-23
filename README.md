@@ -1,6 +1,6 @@
 # CurrencyConverter
 
-Version: 0.0.1 - 22 Oct 2018
+Version: 1.0.0 - 23 Oct 2018
 
 ## Description
 
