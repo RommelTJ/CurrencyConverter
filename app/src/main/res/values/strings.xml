@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">CurrencyConverter</string>
     <string name="currency_image">Currency Image</string>
+    <string name="currencyAmount">Amount in $</string>
+    <string name="textLabel">Enter the amount you want to convert</string>
+    <string name="currencyAmountHint">Amount in $</string>
+    <string name="convertButtonName">Convert</string>
 </resources>
